@@ -14,11 +14,11 @@ services:
     env_file:
     - kafka.env
   kafka-manager:
-    image: gudari/kafkamanager:2.0.0.2
+    image: gudari/kafka-manager:2.0.0.2
     container_name: kafka-manager
     hostname: kafka-manager
     env_file:
-    - kafkamanager.env
+    - kafka-manager.env
 
   hoster:
     image: dvdarias/docker-hoster
